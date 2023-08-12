@@ -6,8 +6,7 @@ import './index.css';
 
 const Title  = () =>(
  <a href="/">
-
-
+<img src="https://marketplace.canva.com/EAFXIvlL2Ns/2/0/1600w/canva-brown-and-black-vintage-food-restaurant-logo-YASJJho2Kzw.jpg" height="80px" width="80px" alt="" srcset="" />
 
  </a>
 );
@@ -73,4 +72,3 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<AppLayout />);
 
-// 1.39
