@@ -30,14 +30,23 @@ const Header = () => {
   )
 }
 
+ const burgerKing = {
+   name : "Burger King",
+   image : "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/r3jtq0ipwol9tby1khja",
+   cusines : ["Burger","American"],
+   rating : "4.2"
+ }
+
+
+
 const RestaurantCard = () =>{
   return (
     <div className='card'>
-      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/r3jtq0ipwol9tby1khja" alt="" srcset="" />
+      <img src={burgerKing.image} />
 
-      <h2>Burger king</h2>
-      <h3>Burhgers, Americans</h3>
-      <h4>4.2 stars</h4>
+      <h2>{burgerKing.name}</h2>
+      <h3>{burgerKing.cusines}</h3>
+      <h4>{burgerKing.rating} stars</h4>
 
     </div>
     
