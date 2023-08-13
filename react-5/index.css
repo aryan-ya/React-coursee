@@ -17,4 +17,7 @@
 }.card >img {
  
   width: 100%;
+}.restaurant_list{
+  display: flex;
+  flex-wrap: wrap;
 }

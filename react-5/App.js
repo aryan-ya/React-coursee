@@ -45,7 +45,7 @@ const RestaurantCard = () =>{
       <img src={burgerKing.image} />
 
       <h2>{burgerKing.name}</h2>
-      <h3>{burgerKing.cusines}</h3>
+      <h3>{burgerKing.cusines.join(",")}</h3>
       <h4>{burgerKing.rating} stars</h4>
 
     </div>
@@ -55,8 +55,28 @@ const RestaurantCard = () =>{
 }
 const Body = () =>{
   return (
-
+  <div className='restaurant_list'>
     <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+    <RestaurantCard />
+  </div>
   )
 } 
 
