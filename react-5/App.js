@@ -1859,39 +1859,49 @@ const restaurantList = [
 
 
 
-const RestaurantCard = (props) =>{
-  console.log(props);
+// Restaurant card component: Image, name, cuisine
+const RestaurantCard = ({
+  cloudinaryImageId,
+  name,
+  cuisines,
+  area,
+  lastMileTravelString,
+  costForTwoString,
+  avgRating,
+}) => {
   return (
     <div className="card">
-      <img src={
-         "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
-         restaurantList[4].data?.cloudinaryImageId
-      } />
-
-      <h2>{resList[0].data?.name}</h2>
-      <h3>{restaurantList[0].data?.cuisines.join(",")}</h3>
-      <h4>{restaurantList[0].data?.lastMileTravelString} minutes</h4>
-
+      <img
+        src={
+          "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
+          cloudinaryImageId
+        }
+      />
+      <h2>{name}</h2>
+      <h4>{cuisines.join(", ")}</h4>
+      <h4>{area}</h4>
+      <span>
+      <h4><i class="fa-solid fa-star"></i>{avgRating}</h4>
+        <h4>{lastMileTravelString}</h4>
+        <h4>{costForTwoString}</h4>
+      </span>
     </div>
-    
-  )
-   
-}
-// props properties
+  );
+};
 
-const Body = () =>{
+// Body Component for body section: It contain all restaurant cards
+// We are mapping restaurantList array and passing data to RestaurantCard component as props with unique key as index
+const Body = () => {
   return (
-  <div className='restaurant_list'>
-    <RestaurantCard  restaurant= {restaurtList[0]} />
-    <RestaurantCard   restaurant= {restaurantList[1]} />
-    <RestaurantCard  restaurant= {restaurantList[2]} />
-    <RestaurantCard  restaurant= {restaurantList[3]} />
-    <RestaurantCard  restaurant= {restaurantList[4]} />
-    <RestaurantCard  restaurant= {restaurantList[5]}/>
+    <div className="restaurant_list">
+      {restaurantList.map((restaurant) => {
+        return <RestaurantCard key={restaurant.data.id} {...restaurant.data} />;
+      })}
+    </div>
+  );
+};
 
-  </div>
-  )
-} 
+
 
 const Footer = () => {
   return (
