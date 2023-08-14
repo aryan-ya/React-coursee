@@ -1868,7 +1868,7 @@ const RestaurantCard = (props) =>{
          restaurantList[4].data?.cloudinaryImageId
       } />
 
-      <h2>{restaurantList[0].data?.name}</h2>
+      <h2>{resList[0].data?.name}</h2>
       <h3>{restaurantList[0].data?.cuisines.join(",")}</h3>
       <h4>{restaurantList[0].data?.lastMileTravelString} minutes</h4>
 
@@ -1882,7 +1882,7 @@ const RestaurantCard = (props) =>{
 const Body = () =>{
   return (
   <div className='restaurant_list'>
-    <RestaurantCard  restaurant= {restaurantList[0]} />
+    <RestaurantCard  restaurant= {restaurtList[0]} />
     <RestaurantCard   restaurant= {restaurantList[1]} />
     <RestaurantCard  restaurant= {restaurantList[2]} />
     <RestaurantCard  restaurant= {restaurantList[3]} />
