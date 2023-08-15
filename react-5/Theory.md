@@ -11,3 +11,8 @@ jsx can only one parent component.
 the reconcilation react use to diff one tree to another  to determine which parts needs to be chaneged are known as reconcilation .
 
 # difference between react dom and virtual dom
+
+
+# what is react fibre?
+
+# what is diff algorthim
