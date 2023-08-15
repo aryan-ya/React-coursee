@@ -13,7 +13,6 @@ import '/index.css';
 
 
 
-
  const burgerKing = {
    name : "Burger King",
    image : "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/r3jtq0ipwol9tby1khja",
