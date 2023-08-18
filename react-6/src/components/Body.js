@@ -1,5 +1,7 @@
+
+import { useState } from 'react';
 import { restaurantList } from '../../contants'; 
- 
+
 
 import RestaurantCard from "./RestaurantCard";
 
@@ -9,12 +11,25 @@ import RestaurantCard from "./RestaurantCard";
 
 
 const Body = () => {
-  let searchTxt = "KFC";
+// let searchTxt = "KFC";
+// const [searchText ] = useState("KFC");
+
+const [searchInput , setSearchInput]  = useState("KFC");
+
     return (
      <>
+            <div className="search-container">
+                <input
+                    type="text"
+                    className="search-input" 
+                    placeholder="search"
+                    value={searchInput}
+                    onChange={(e) =>{ 
+                     setSearchInput(e.target.value);
+                    }}
+                />
 
-      <div className="search-container">
-        <input type='text' className='search-input' placeholder='Search'value={searchTxt}   />
+        <button className="search-btn">Search</button>
       </div>
       
       <div className="restaurant_list">
@@ -28,3 +43,6 @@ const Body = () => {
 
 
   export default Body;
+
+
+  // 1.03
