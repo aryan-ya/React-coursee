@@ -29,7 +29,10 @@ const [searchInput , setSearchInput]  = useState("KFC");
                     }}
                 />
 
-        <button className="search-btn">Search</button>
+        <button className="search-btn" onClick={() =>{
+          //need to filter tha data
+          const data = filterData(searchText, restaurants);
+        }}>Search</button>
       </div>
       
       <div className="restaurant_list">
