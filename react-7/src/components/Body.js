@@ -1,7 +1,7 @@
 
 import { restaurantList } from "/contants";
 import RestaurantCard from "./RestaurantCard";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 
 function filterData(searchText, restaurants) {
   const filterData = restaurants.filter((restaurant) =>
@@ -17,7 +17,14 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
   
   const [restaurants, setRestaurants] = useState(restaurantList);
-  console.log(restaurants);
+
+
+  useEffect(() =>{
+    console.log("call and their webdency is changed");
+  }, []);
+
+  console.log("render");
+  
   return (
     <>
       <div className="search-container">
