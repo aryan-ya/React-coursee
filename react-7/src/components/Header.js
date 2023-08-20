@@ -1,4 +1,4 @@
- import {useState} from "react";
+
  
  
  const Title  = () =>(
@@ -10,15 +10,12 @@
 
 
    const Header = () => {
-
-     
-     const [title ,setTitle] = useState("food villa");
-
+  
     return (
-    <div className='header'>
-     <Title />
-     <h1>{title}</h1>
-     <button onClick = {() => setTitle("New food app")}>Change title</button>
+      
+    <div className="header">
+    <Title />
+    
 
      <div className="nav-items">
      <ul>
