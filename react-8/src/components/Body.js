@@ -18,7 +18,7 @@ const Body = () => {
   
   const [restaurants, setRestaurants] = useState(restaurantList);
 
-  console.log("render");
+  console.log(restaurants);
   useEffect(() =>{
     console.log("call and their webdency is changed");
   }, []);
