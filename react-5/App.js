@@ -1857,6 +1857,8 @@ const restaurantList = [
 ];
 
 
+console.log("Aryan");
+
 
 
 // Restaurant card component: Image, name, cuisine

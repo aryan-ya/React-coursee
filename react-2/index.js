@@ -7,3 +7,6 @@ function x(){
 
 }
 var xyz = 30;
+
+
+console.log("artabbb");

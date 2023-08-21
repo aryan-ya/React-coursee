@@ -18,12 +18,12 @@ const Body = () => {
   
   const [restaurants, setRestaurants] = useState(restaurantList);
 
-
+  console.log("render");
   useEffect(() =>{
     console.log("call and their webdency is changed");
   }, []);
 
-  console.log("render");
+  
   
   return (
     <>

@@ -4,6 +4,7 @@ import  ReactDOM  from "react-dom/client";
 
 
 
+
 const heading  = (
   <h1 id="title" key="h2">
     Namaste react
