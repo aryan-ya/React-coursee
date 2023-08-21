@@ -1,4 +1,5 @@
 
+import { render } from "@testing-library/react";
 import { restaurantList } from "../contants";
 import RestaurantCard from "./RestaurantCard";
 import { useState , useEffect } from "react";
@@ -18,12 +19,20 @@ const Body = () => {
   
   const [restaurants, setRestaurants] = useState(restaurantList);
 
-  console.log(restaurants);
-  useEffect(() =>{
-    console.log("call and their webdency is changed");
-  }, []);
 
+  useEffect(() =>{
+    //API CALL
+    getRestaurants();
+  }, []);
   
+  async  function getRestaurants(){
+    const data = await fetch( "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING");
+    const json = await data.json();
+    console.log(json);
+  }
+
+
+  console.log("render");
   
   return (
     <>
@@ -59,3 +68,5 @@ const Body = () => {
 };
 
 export default Body;
+
+// 1.52
