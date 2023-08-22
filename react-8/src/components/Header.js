@@ -1,35 +1,54 @@
+import { useState } from "react";
+import FoodFireLogo from "../Images/Food Fire Logo.png";
 
- 
- 
- const Title  = () =>(
-    <a href="/">
-   <img src="https://marketplace.canva.com/EAFXIvlL2Ns/2/0/1600w/canva-brown-and-black-vintage-food-restaurant-logo-YASJJho2Kzw.jpg" height="80px" width="80px" alt=""  />
-   
-    </a>
-   );
+// Title component for display logo
+const Title = () => (
+  <a href="/">
+    <img
+      className="logo"
+      src={FoodFireLogo}
+      alt="Food Fire Logo"
+      title="Food Fire"
+    />
+  </a>
+);
 
+// Header component for header section: Logo, Nav Items
+const Header = () => {
+  // use useState for user logged in or logged out
+  const [isLoggedin, setIsLoggedin] = useState(true);
 
-   const Header = () => {
-  
-    return (
-      
+  return (
     <div className="header">
-    <Title />
-    
-
-     <div className="nav-items">
-     <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Contact</li>
-      <li>Cart</li>
-     </ul>
+      <Title />
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>
+            <i className="fa-solid fa-cart-shopping"></i>
+          </li>
+          <li>
+            {/* use conditional rendering for login and logout */}
+            {isLoggedin ? (
+              <button
+                className="logout-btn"
+                onClick={() => setIsLoggedin(false)}
+              >
+                Logout
+              </button>
+            ) : (
+              <button className="login-btn" onClick={() => setIsLoggedin(true)}>
+                Login
+              </button>
+            )}
+          </li>
+        </ul>
+      </div>
     </div>
-    </div>
-    )
-  }
-  
-   
+  );
+};
 
 export default Header;
 
