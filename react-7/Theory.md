@@ -1,4 +1,6 @@
-# Chapter 06 - Exploring the world
+# React Course  😍
+
+# Chapter 06 - Exploring the world  
 
 ## Q: What is `Microservice`?
 A: `Microservice` - also known as the microservice architecture - is an architectural and organizational approach to software development where software is composed of small independent services like database, server or a UI of the application, that communicate over well-defined APIs. These services are owned by small, self-contained teams.
