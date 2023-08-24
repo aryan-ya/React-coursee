@@ -1,4 +1,4 @@
-# --REact--Course-- 😍
+# --React--Course-- 😍
 
 # _Chapter 01 - Inception_
 

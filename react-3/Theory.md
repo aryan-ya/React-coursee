@@ -1,4 +1,6 @@
 
+# React-Course 😍
+
 # Chapter 03 - Laying the Foundation 😍
 
 ## Q: What is `JSX`?
