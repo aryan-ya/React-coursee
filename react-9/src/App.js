@@ -3,8 +3,7 @@ import React from "react";
 import Header from "./components/Header";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
-import About from "./components/About";
-import Contact from "./components/Contact";
+
 
 
 
@@ -16,13 +15,12 @@ import Contact from "./components/Contact";
 function  App() {
   return (
     <div className="App">
-<Contact />
+
 <Header />
 
 <Body />
-<About />
-<Footer />
 
+<Footer />
 
     </div>
   );
