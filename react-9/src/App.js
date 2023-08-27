@@ -20,6 +20,7 @@ function  App() {
 
 <Body />
 
+
 <Footer />
 
     </div>
