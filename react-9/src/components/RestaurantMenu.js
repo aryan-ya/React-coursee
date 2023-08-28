@@ -1,10 +1,16 @@
-import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 
 
 const RestaurantMenu = () =>{
     //how to read dynamic url
-    const { resId } = useParams();
+  
+   const { resid } = useParams();
+
+//   use proper names
+  const [restaurant , setRestaurant] = useState({});
+   
   
     useEffect(()=>{
         getRestaurantInfo();
@@ -18,11 +24,14 @@ const RestaurantMenu = () =>{
 
        const json = await data.json();
        console.log(json);
+       setRestaurant(json.data)
     }
    
     return (
         <div>
-            <h1>Restaurant id: {resId}</h1>
+            <h1>Restaurant id: {resid}</h1>
+            <h2>{restaurant.name}</h2>
+            <img src={} />
             <h1>Namaste</h1>
         </div>
     )
