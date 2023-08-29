@@ -12,7 +12,7 @@ export const swiggy_api_URL =
 
 // Swiggy API to get Restaurant Menu data with corsproxy
 export const swiggy_menu_api_URL =
-"https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=";
+"https://www.zomato.com/webroutes/getPage?page_url=/aurangabad/safa-restaurant-2-shahgunj/order&location=&isMobile=0";
 
 // shimmer card unit
 export const shimmer_card_unit = 20;
