@@ -4,6 +4,9 @@ import Header from "./components/Header";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
 
+import RestaurantMenu from "./components/RestaurantMenu";
+
+
 
 
 
@@ -25,8 +28,8 @@ function  App() {
   );
 }
 
-// const root = createRoot(document.getElementById("root"));
-// root.render(<RouterProvider router={appRouter} />);
+
+
 
 
 export default App;
