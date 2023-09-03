@@ -1,4 +1,4 @@
-## Namaste React Course by Akshay Saini
+
 # Chapter 08 - Let's get Classy
 
 
