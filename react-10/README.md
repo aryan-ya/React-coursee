@@ -1,6 +1,6 @@
 <a href="https://react-coursee-7mtw-git-main-aryan-ya.vercel.app/">LIVE LINK 😍</a>
 
-<img src="/src/bg.png" alt="" srcset="" />
+<img src="/src/Images/bg.png"  />
 
 
 
